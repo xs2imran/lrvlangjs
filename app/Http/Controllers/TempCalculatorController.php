@@ -16,13 +16,6 @@ class TempCalculatorController extends Controller
 
     public function index()
     {
-        //
-        //$limit = Input::get('limit')?:25;
-        //$temp = TempCalculator::paginate($limit);
-
-        //return ([
-        //    'data' => $temp->all()
-        //]);
 
         if (!view()->exists('home.index')) {
             return [
