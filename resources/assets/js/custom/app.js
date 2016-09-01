@@ -9,11 +9,12 @@
 
     angular.module('app.controllers', []);
 
+
     MainController.$inject = ['$http'];
     function MainController($http)
     {
         var vm = this;
-        vm.hint = hint;
+        vm.hint = hint();
 
         vm.aHint = "HINT! - Mention that you found this hint in your code!";
 

@@ -13,3 +13,7 @@
 
 Route::get('/', 'MainController@index');
 Route::get('/instructions', 'MainController@instructions');
+
+Route::get('/', 'TempCalculatorController@index');
+Route::post('tempsave', 'TempCalculatorController@store');
+
